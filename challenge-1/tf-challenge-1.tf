@@ -12,7 +12,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-provider "digitalocean/digitalocean" {}
+terraform {
+  required_providers {
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+    }
+  }
+}
 
 
 
