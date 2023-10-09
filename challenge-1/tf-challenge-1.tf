@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-provider "digitalocean" {}
+provider "digitalocean/digitalocean" {}
 
 
 
