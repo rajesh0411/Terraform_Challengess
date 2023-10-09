@@ -16,7 +16,6 @@ provider "digitalocean" {}
 
 
 
-
-resource "aws_eip" "kplabs_app_ip" {
-   domain   = "vpc"
+resource "aws_eip" "lb" {
+  domain   = "vpc"
 }
