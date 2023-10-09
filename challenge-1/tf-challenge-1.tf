@@ -1,5 +1,8 @@
 terraform {
   required_providers {
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+    }
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
@@ -12,13 +15,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-terraform {
-  required_providers {
-    digitalocean = {
-      source = "digitalocean/digitalocean"
-    }
-  }
-}
 
 
 
